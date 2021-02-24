@@ -6,10 +6,48 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" media=" all and (min-width:481px) and (max-width:1024px)" href="tablet.css" />
     <link rel="stylesheet" media="screen and (max-width:480px)" href="phone.css" />
+    <script src="https://kit.fontawesome.com/8ed4d3c170.js" crossorigin="anonymous"></script>
     <title>Reservia - Trouver votre hébergement pour des vacances de rêve</title>
 </head>
 
 <body>
+    <header>
+        <div id ="header__top">
+            <img src="images/logo/Reservia.svg" alt="logo de l'entreprise"/>
+            <nav>
+                <ul>
+                    <li> <a href="#"> Hébergements </a> </li>
+                    <li> <a href="#"> Activités </a> </li>
+                    <li> <a href="#"> S'inscrire </a> </li>
+                </ul>
+            </nav>
+        </div>
+        <div id="header__bottom">
+            <div id="header_title">
+                <h1> Trouvez votre hébergement pour des vacances de rêve </h1>
+                <p> En plein centre ville ou en pleine nature </p>
+            </div>
+            <div id="header__search_bar">
+                <form method="post" action="#">
+                    <p>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <input type="search" value="Marseille, France"/>
+                        <input type="submit" value="Rechercher">
+                    </p>
+                </form>
+            </div>
+            <div id="header_filters">
+                <p>Filtres</p>
+                <span> <a href="#"> <i class="fas fa-money-bill-wave"></i> Économique </a> </span>
+                <span> <a href="#"> <i class="fas fa-child"></i> Familial </a> </span>
+                <span> <a href="#"> <i class="fas fa-heart"></i> Romantique </a> </span>
+                <span> <a href="#"> <i class="fas fa-dog"></i> Animaux autorisés </a> </span>
+            </div>
+            <div id="info">
+                <p> <i class="fas fa-info-circle"></i> Plus de 500 logements sont disponibles dans cette ville </p>
+            </div>
+        </div>  
+    </header>
 </body>
 
 </html>
