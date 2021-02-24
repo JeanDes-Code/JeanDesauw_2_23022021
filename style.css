@@ -53,7 +53,7 @@ nav ul
 
 nav li
 {
-    font-family: 'Raleway-Semibold';
+    font-family: 'Raleway-semibold';
     padding-left: 50px;
     font-size: 1.1em;
 }
@@ -68,8 +68,9 @@ nav a
 
 nav a:hover
 {
-border-top: 2px solid #0065FC;
-padding: 40px 20px 0px 20px;
+    font-family: 'Raleway';
+    border-top: 2px solid #0065FC;
+    padding: 40px 20px 0px 20px;
 }
 
 nav a:focus
