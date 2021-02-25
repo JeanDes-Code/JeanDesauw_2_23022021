@@ -1,0 +1,43 @@
+body
+{
+    width:auto;
+}
+#header__top
+{
+    display: flex;
+    align-items: center;
+}
+
+#header__top img
+{
+    width: 300px;
+}
+
+#header__logo_register
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu__register_mobile
+{
+    display: block;
+    color: #0065FC;
+}
+
+.menu__register
+{
+    display: none;
+}
+
+nav 
+{
+    display: flex;
+    justify-content: space-arround;
+}
+
+.menu__item
+{
+    flex-grow: 1;
+}
