@@ -19,21 +19,33 @@
 }
 /* Styles principaux */
 
+html /*10px = 1rem */
+{
+    font-size: 62.5%;
+}
+
 body
 {
     font-family: "Raleway", sans-serif;
     margin:auto;
-    width: 90%;
+    width: 80%;
 }
 
 h1
 {
-    font-size: 1.3em;
+    font-size: 1.7rem;
+    font-family: "Raleway-bold"
+}
+
+h2
+{
+    font-size: 2rem;
+    font-family: "Raleway-bold"
 }
 
 p
 {
-    font-size: 0.98em;
+    font-size: 1.4rem;
 }
 
 /* Header */
@@ -45,6 +57,11 @@ p
     justify-content: space-between;
 }
 
+
+.menu__register_mobile
+{
+    display:none;
+}
 nav ul
 {
     display: flex;
@@ -55,22 +72,33 @@ nav li
 {
     font-family: 'Raleway-semibold';
     padding-left: 50px;
-    font-size: 1.1em;
+    font-size: 2rem;
 }
 
 nav a
 {
-    text-decoration:double;
-    font-weight: 400;
-    color: #0065FC;
+    text-decoration: none;
+    color: #F2F2F2;
     padding: 50px 20px 0px 20px;
+}
+
+.menu__register a
+{
+    font-family: 'Raleway-bold';
+    color:#0065FC;
+}
+
+.menu__register a:hover
+{
+    font-family: 'Raleway-bold';
 }
 
 nav a:hover
 {
-    font-family: 'Raleway';
+    font-family: 'Raleway-semibold';
+    color: #0065FC;
     border-top: 2px solid #0065FC;
-    padding: 40px 20px 0px 20px;
+    padding: 3rem 2rem 0px 2rem;
 }
 
 nav a:focus
@@ -101,7 +129,6 @@ nav a:focus
 {
     padding: 12px 12px 10px 15px;
     background-color: #F2F2F2;
-    border: 1px solid #f2f2f2;
     border-radius: 10px 0px 0px 10px;
 }
 
@@ -122,15 +149,16 @@ nav a:focus
     font-family: 'Raleway-Semibold';
     padding-right: 10px;
     background-color: #0065FC;
-    border: 1px solid #0065FC;
+    border: none;
     border-radius: 0px 10px 10px 0px;
     color: white;
+    cursor: pointer;
 }
 
 .search_bar
 {
     height: 40px;
-    font-size: 1.1em;
+    font-size: 1.5rem;
     font-weight: bold;
     padding-left: 15px;
     outline: none;
@@ -142,7 +170,6 @@ nav a:focus
 {
     font-family: 'Raleway-bold';
     font-weight: bolder;
-    font-size: 1.1em;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -158,7 +185,7 @@ nav a:focus
 {   
     font-family: 'Raleway-bold';
     font-weight: bold;
-    font-size: 1em;
+    font-size: 1.7rem;
     border : 2px solid #F2F2F2;
     border-radius: 30px;
     padding: 0px 20px 0px 0px;
@@ -166,20 +193,21 @@ nav a:focus
     outline: none;
 }
 
-button
+.filters__button
 {
     margin-left: 20px;
 }
 
-button:hover
+.filters__button:hover
 {
     border: 2px solid #0065FC;
+    cursor: pointer;
 }
 
-button:focus
+.filters__button:focus
 {
     background-color: #0065FC;
-    border: 2px solid #0065FC;
+    border: none;
     color: white;
 }
 
@@ -189,7 +217,6 @@ button:focus
     margin-right: 5px;
     padding: 9px 8px 9px 8px;
     background-color: #DEEBFF;
-    border: 1px solid #DEEBFF;
     border-radius: 30px;
 }
 
@@ -205,4 +232,142 @@ button:focus
     padding: 5px 10px 5px 10px;
     border: 2px solid #F2F2F2;
     border-radius: 30px;
+}
+
+/* Corps de la page */
+
+/* Section Article "Hébergements" et Aside "Les plus populaires" */
+
+#main__heading
+{
+    display : flex;
+    flex-direction: row;
+}
+.article__title
+{
+    margin: 1.5rem 0rem 1.5rem 4rem;
+}
+
+.true
+{
+ color: #0065FC;
+}
+
+.false
+{
+    color: #f2f2f2;
+}
+
+/*Article "Hébergements" */
+
+#hebergements
+{
+    display: flex;
+    flex-direction: column;
+    background-color: #F2F2F2;
+    padding: 2rem 1rem 0rem 1rem ;
+    border-radius: 20px;
+    width: 80rem;
+    margin-right: 3.5rem;
+}
+
+#hebergements__vignette_first_row
+{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 3rem;
+}
+
+#hebergements_vignette_second_row
+{
+    display:flex;
+    justify-content: space-evenly;
+    
+}
+
+.hebergements__vignette_style img
+{
+    height: 9rem;
+    width: 20rem;
+    object-fit: cover;
+    border-radius: 12px 12px 0px 0px ;
+}
+
+.hebergements__vignette_style
+{
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    border-radius: 15px;
+    padding: 0.5rem 0.5rem 0rem 0.5rem;
+    box-shadow: 1rem 1rem 2rem #F2F2F2;
+}
+
+.description__title
+{
+    font-family: 'Raleway-bold';
+    font-size: 1.3rem;
+}
+
+.more_button
+{
+    font-family: 'Raleway-bold';
+    font-weight: bold;
+    font-size: 1.3rem;
+    border: none;
+    margin: 2.5rem 0rem 3rem 4rem;
+    outline:none;
+}
+
+.more_button:hover
+{
+    cursor: pointer;
+}
+
+.hebergements__description_style
+{
+    margin: 0.5rem 0rem 1rem 1rem;
+}
+
+.more_button:focus
+{
+    color: #0065FC;
+    background-color: #f2f2f2;
+}
+
+/*Aside "Les plus populaires" */
+
+#populaires
+{
+    display: flex;
+    flex-direction: column;
+    background-color: #F2F2F2;
+    padding: 2rem 3em 0rem 3rem ;
+    border-radius: 2rem;
+    width: 45rem;
+}
+
+.populaires__vignette_style img
+{
+    height: 12rem;
+    width: 12rem;
+    object-fit: cover;
+    border-radius: 1.2rem 0rem 0rem 1.2rem ;
+}
+
+.populaires__vignette_style
+{
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    border-radius: 1.5rem;
+    padding: 0.5rem 0.5rem 0px 0.5rem;
+    margin-bottom: 3rem;
+    box-shadow: 0rem 0.2rem 1rem #F2F2F2;
+    display: flex;
+}
+
+.populaires__description_style
+{
+    margin: 0.5rem 0rem 1rem 1rem;
 }
