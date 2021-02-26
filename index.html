@@ -20,8 +20,8 @@
             </div>
             <nav>
                 <ul>
-                    <li class="menu__item"> <a href="#"> Hébergements </a> </li>
-                    <li class="menu__item"> <a href="#"> Activités </a> </li>
+                    <li class="menu__item"> <a href="#hebergements"> Hébergements </a> </li>
+                    <li class="menu__item"> <a href="#activites"> Activités </a> </li>
                     <li class="menu__register"> <a href="#"> S'inscrire </a> </li>
                 </ul>
             </nav>
@@ -155,7 +155,10 @@
         </article>
         
         <aside id="populaires">
-            <h2 id="article__title"> Les plus populaires </h2>
+            <div id="populaires__title">
+                <h2 class="article__title"> Les plus populaires </h2> 
+                <i class="fas fa-chart-line fa-2x"></i> 
+            </div>
             <a class="populaires__vignette_style" href="#"> 
                 <img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hôtel Le soleil du matin"/> 
                 <div class="populaires__description_style">
@@ -201,17 +204,95 @@
         </aside>
 
     </div>
-
+    <div id="main__footer">
         <article id="activites">
-            <h2 class="article__title"> Activités à Marseille </h2>
-            <a class="activites__vignette_style" href="#"> 
-                <img src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Hôtel chez Amina"/> <br>
-                <div class="activites__description_style">
-                    <span class="description__title"> Hôtel chez Amina </span> 
+            <h2 class="activites__title"> Activités à Marseille </h2>
+            <div id="activites__vignette">
+                <div class="activites__vignette_bloc">
+                    <div class="vignette__size_l vignette__picture_shape">
+                        <a class="activites__vignette_style" href="#"> 
+                            <img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux Port"/> <br>
+                            <div class="activites__description_style">
+                                <span class="description__title"> Vieux Port </span> 
+                            </div>
+                        </a>
+                    </div>
+                    <div class="activites__vignette_column">
+                        <div class="vignette__size_m vignette__picture_shape">
+                            <a class="activites__vignette_style" href="#"> 
+                                <img src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues"/> <br>
+                                <div class="activites__description_style">
+                                    <span class="description__title"> Fort de Pomègues </span> 
+                                </div>
+                            </a>
+                        </div>
+                        <div class="vignette__size_xxs vignette__picture_shape">
+                            <a class="activites__vignette_style" href="#"> 
+                                <img src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Îles du Frioul"/> <br>
+                                <div class="activites__description_style">
+                                    <span class="description__title"> Îles du Frioul </span> 
+                                </div>
+                            </a>
+                        </div>
+                    </div>
                 </div>
-            </a>
+                <div class="activites__vignette_bloc">
+                    <div class="vignette__size_l vignette__picture_shape">
+                        <a class="activites__vignette_style" href="#"> 
+                            <img src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc National des Calanques"/> <br>
+                            <div class="activites__description_style">
+                                <span class="description__title"> Parc National des Calanques </span> 
+                            </div>
+                        </a>
+                    </div>
+                    <div class="activites__vignette_column">
+                        <div class="vignette__size_xs vignette__picture_shape">
+                            <a class="activites__vignette_style" href="#"> 
+                                <img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde"/> <br>
+                                <div class="activites__description_style">
+                                    <span class="description__title"> Notre-Dame-de-la-Garde </span> 
+                                </div>
+                            </a>
+                        </div>
+                        <div class="vignette__size_s vignette__picture_shape">
+                            <a class="activites__vignette_style" href="#"> 
+                                <img src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc Longchamp"/> <br>
+                                <div class="activites__description_style">
+                                    <span class="description__title"> Parc Longchamp </span> 
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </article>
+    </div>    
     </main>
+    <footer>
+        <div id='footer__about' class="footer__style">
+            <h3>A propos</h3>
+            <ul>
+                <li> <a href="#"> Fonctionnement du site </a> </li>
+                <li> <a href="#"> Conditions générales de vente </a> </li>
+                <li> <a href="#"> Données et confidentialité </a> </li>
+            </ul>
+        </div>
+        <div id="footer__hebergements" class="footer__style">
+            <h3>Nos Hébergements</h3>
+            <ul>
+                <li> <a href="#"> Charte qualité </a> </li>
+                <li> <a href="#"> Soumettre votre hôtel </a> </li>
+            </ul>
+        </div>
+        <div id="footer__assistance" class="footer__style">
+            <h3>Assistance</h3>
+            <ul>
+                <li> <a href="#"> Centre d'aide </a> </li>
+                <li> <a href="#"> Nous contacter </a> </li>
+            </ul>
+        </div>
+    </footer>
+
 </body>
 
 </html>
