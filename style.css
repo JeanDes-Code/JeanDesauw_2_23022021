@@ -57,11 +57,11 @@ p
     justify-content: space-between;
 }
 
+
 .menu__register_mobile
 {
     display:none;
 }
-
 nav ul
 {
     display: flex;
