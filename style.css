@@ -302,7 +302,7 @@ main
 .hebergements__vignette_style img
 {
     height: 9rem;
-    width: 200px;
+    width: 20rem;
     object-fit: cover;
     border-radius: 1.2rem 1.2rem 0rem 0rem ;
 }
@@ -359,7 +359,7 @@ main
     background-color: #F2F2F2;
     padding: 2rem 3rem 0rem 3rem ;
     border-radius: 2rem;
-    width: 30%rem;
+    width: 30%;
 }
 
 #populaires h2
