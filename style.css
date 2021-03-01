@@ -22,12 +22,13 @@
 html /*10px = 1rem */
 {
     font-size: 62.5%;
-    width: 100%;
 }
 
 body
 {
     font-family: "Raleway", sans-serif;
+    margin:auto;
+    width: 80%;
 }
 
 h1
@@ -42,12 +43,6 @@ h2
     font-family: "Raleway-bold"
 }
 
-h3
-{
-    font-size: 1.5rem;
-    font-family:"Raleway-bold";
-}
-
 p
 {
     font-size: 1.4rem;
@@ -55,28 +50,18 @@ p
 
 /* Header */
 
-header
-{
-    margin-left: 50px;
-    margin-right: 50px;
-}
-
 #header__top
 {
-    margin-top: 3rem;
+    margin-top: 30px;
     display: flex;
+    justify-content: space-between;
 }
+
 
 .menu__register_mobile
 {
     display:none;
 }
-
-nav
-{
-    margin-left: 540px;
-}
-
 nav ul
 {
     display: flex;
@@ -85,16 +70,16 @@ nav ul
 
 nav li
 {
-    font-family: 'Raleway';
-    padding-left: 5rem;
+    font-family: 'Raleway-semibold';
+    padding-left: 50px;
     font-size: 2rem;
 }
 
 nav a
 {
     text-decoration: none;
-    color: black;
-    padding: 5rem 2rem 0rem 2rem;
+    color: #F2F2F2;
+    padding: 50px 20px 0px 20px;
 }
 
 .menu__register a
@@ -106,7 +91,6 @@ nav a
 .menu__register a:hover
 {
     font-family: 'Raleway-bold';
-    border: none;
 }
 
 nav a:hover
@@ -114,7 +98,7 @@ nav a:hover
     font-family: 'Raleway-semibold';
     color: #0065FC;
     border-top: 2px solid #0065FC;
-    padding: 3rem 2rem 0rem 2rem;
+    padding: 3rem 2rem 0px 2rem;
 }
 
 nav a:focus
@@ -128,12 +112,12 @@ nav a:focus
 
 #header__bottom
 {
-    margin-top: 3rem;
+    margin-top: 30px;
 }
 
 #header__title p
 {
-    margin-top: -0.5rem;
+    margin-top: -5px;
 }
 
 #header__search_bar
@@ -143,18 +127,18 @@ nav a:focus
 
 #search_bar__logo
 {
-    padding: 1.2rem 1.2rem 1rem 1.5rem;
+    padding: 12px 12px 10px 15px;
     background-color: #F2F2F2;
-    border-radius: 1rem 0rem 0rem 1rem;
+    border-radius: 10px 0px 0px 10px;
 }
 
 #search_bar__box
 {
     font-family: "Raleway-bold";
-    margin-left: -0.5rem;
-    margin-right: -0.5rem;
-    border-top: 0.1rem solid #F2F2F2;
-    border-bottom: 0.1rem solid #F2F2F2;
+    margin-left: -5px;
+    margin-right: -5px;
+    border-top: 1px solid #F2F2F2;
+    border-bottom: 1px solid #F2F2F2;
     border-left: none;
     border-right: none;
 }
@@ -163,20 +147,20 @@ nav a:focus
 #search_bar__button
 {
     font-family: 'Raleway-Semibold';
-    padding-right: 1rem;
+    padding-right: 10px;
     background-color: #0065FC;
     border: none;
-    border-radius: 0rem 1rem 1rem 0rem;
+    border-radius: 0px 10px 10px 0px;
     color: white;
     cursor: pointer;
 }
 
 .search_bar
 {
-    height: 4rem;
+    height: 40px;
     font-size: 1.5rem;
     font-weight: bold;
-    padding-left: 1.5rem;
+    padding-left: 15px;
     outline: none;
 }
 
@@ -194,7 +178,7 @@ nav a:focus
 
 #filters__container
 {
-    margin-left: 2rem;
+    margin-left: 20px;
 }
 
 .filters__button
@@ -202,21 +186,21 @@ nav a:focus
     font-family: 'Raleway-bold';
     font-weight: bold;
     font-size: 1.7rem;
-    border : 0.2rem solid #F2F2F2;
-    border-radius: 3rem;
-    padding: 0rem 2rem 0rem 0rem;
+    border : 2px solid #F2F2F2;
+    border-radius: 30px;
+    padding: 0px 20px 0px 0px;
     background-color: white;
     outline: none;
 }
 
 .filters__button
 {
-    margin-left: 2rem;
+    margin-left: 20px;
 }
 
 .filters__button:hover
 {
-    border: 0.2rem solid #0065FC;
+    border: 2px solid #0065FC;
     cursor: pointer;
 }
 
@@ -230,33 +214,27 @@ nav a:focus
 .filters__logo
 {
     color: #0065FC;
-    margin-right: 0.5rem;
-    padding: 0.9rem 0.8rem 0.9rem 0.8rem;
+    margin-right: 5px;
+    padding: 9px 8px 9px 8px;
     background-color: #DEEBFF;
-    border-radius: 3rem;
+    border-radius: 30px;
 }
 
 .filters__logo_var
 {
-    padding: 0.9rem 1rem 0.9rem 1rem;
+    padding: 9px 10px 9px 10px;
 }
 
 
 .info__logo
 {
     color: #0065FC;
-    padding: 0.5rem 1rem 0.5rem 1rem;
-    border: 0.2rem solid #F2F2F2;
-    border-radius: 3rem;
+    padding: 5px 10px 5px 10px;
+    border: 2px solid #F2F2F2;
+    border-radius: 30px;
 }
 
 /* Corps de la page */
-
-main
-{
-    margin-left: 50px;
-    margin-right: 50px;
-}
 
 /* Section Article "Hébergements" et Aside "Les plus populaires" */
 
@@ -288,23 +266,31 @@ main
     flex-direction: column;
     background-color: #F2F2F2;
     padding: 2rem 1rem 0rem 1rem ;
-    border-radius: 2rem;
+    border-radius: 20px;
+    width: 80rem;
     margin-right: 3.5rem;
 }
 
-.hebergements__vignette_row
+#hebergements__vignette_first_row
 {
     display: flex;
     justify-content: space-evenly;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
+}
+
+#hebergements_vignette_second_row
+{
+    display:flex;
+    justify-content: space-evenly;
+    
 }
 
 .hebergements__vignette_style img
 {
     height: 9rem;
-    width: 200px;
+    width: 20rem;
     object-fit: cover;
-    border-radius: 1.2rem 1.2rem 0rem 0rem ;
+    border-radius: 12px 12px 0px 0px ;
 }
 
 .hebergements__vignette_style
@@ -312,10 +298,9 @@ main
     text-decoration: none;
     color: black;
     background-color: white;
-    border-radius: 1.5rem;
+    border-radius: 15px;
     padding: 0.5rem 0.5rem 0rem 0.5rem;
-    box-shadow: 0 0 2rem #3333332e;
-    margin: 0rem 2rem 2rem 2rem;
+    box-shadow: 1rem 1rem 2rem #F2F2F2;
 }
 
 .description__title
@@ -330,7 +315,7 @@ main
     font-weight: bold;
     font-size: 1.3rem;
     border: none;
-    margin: 0rem 0rem 4rem 2rem;
+    margin: 2.5rem 0rem 3rem 4rem;
     outline:none;
 }
 
@@ -357,21 +342,9 @@ main
     display: flex;
     flex-direction: column;
     background-color: #F2F2F2;
-    padding: 2rem 3rem 0rem 3rem ;
+    padding: 2rem 3em 0rem 3rem ;
     border-radius: 2rem;
-    width: 30%rem;
-}
-
-#populaires h2
-{
-    margin-left: 1rem;
-}
-
-#populaires__title
-{
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
+    width: 45rem;
 }
 
 .populaires__vignette_style img
@@ -380,7 +353,6 @@ main
     width: 12rem;
     object-fit: cover;
     border-radius: 1.2rem 0rem 0rem 1.2rem ;
-    margin-bottom: 0.5rem;
 }
 
 .populaires__vignette_style
@@ -390,124 +362,12 @@ main
     background-color: white;
     border-radius: 1.5rem;
     padding: 0.5rem 0.5rem 0px 0.5rem;
-    margin: 0rem 0.8rem 3rem 0.8rem;
-    box-shadow: 0 0 2rem #3333332e;
+    margin-bottom: 3rem;
+    box-shadow: 0rem 0.2rem 1rem #F2F2F2;
     display: flex;
 }
 
 .populaires__description_style
 {
     margin: 0.5rem 0rem 1rem 1rem;
-}
-
-/* Article  "Activités" */
-
-#activites
-{
-    margin-top: 5rem;
-    display : flex;
-    flex-direction: column;
-}
-
-#activites__vignette
-{
-    display: flex;
-}
-
-.vignette__picture_shape img
-{
-    object-fit: cover;
-    border-radius: 2rem 2rem 0 0;
-}
-
-.vignette__size_l img
-{
-    height: 38rem;
-}
-
-.vignette__size_m img
-{
-    height: 17rem;
-}
-
-.vignette__size_s img
-{
-    height: 15rem;
-}
-
-.vignette__size_xs img
-{
-    height: 13rem;
-}
-
-.vignette__size_xxs img
-{
-    height: 11rem;
-}
-
-.vignette__size_l
-{
-    margin-right: 2rem;
-}
-
-.activites__vignette_style
-{
-    text-decoration: none;
-    color:black;
-    box-shadow: 0rem 0rem 2rem #3333332e;
-    border-radius: 2rem;
-    margin: 0rem 2rem 2rem 0rem;
-    display:flex;
-    flex-direction: column;
-    width: 285px;
-}
-
-.activites__description_style
-{
-    margin: 2rem 0rem 2rem 2rem;
-}
-
-.activites__vignette_column
-{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-/* Footer */
-
-footer
-{
-    display: flex;
-    background-color: #f2f2f2;
-    padding: 0rem 0rem 10rem 2rem;
-
-}
-
-.footer__style
-{
-    margin-right: 25rem;
-}
-
-.footer__style a
-{
-    text-decoration: none;
-    color:black;
-    font-size: 1.4rem;
-}
-
-.footer__style ul
-{
-    list-style: none;
-}
-
-.footer__style li
-{
-    margin-top: 1.5rem;
-}
-
-.footer__style h3
-{
-    margin: 0rem 0rem 2rem 4rem;
-    padding-top: 4rem;
 }
