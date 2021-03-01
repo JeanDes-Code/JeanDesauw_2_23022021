@@ -22,13 +22,12 @@
 html /*10px = 1rem */
 {
     font-size: 62.5%;
+    width: 100%;
 }
 
 body
 {
     font-family: "Raleway", sans-serif;
-    margin:auto;
-    width: 80%;
 }
 
 h1
@@ -56,6 +55,12 @@ p
 
 /* Header */
 
+header
+{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
 #header__top
 {
     margin-top: 3rem;
@@ -69,7 +74,7 @@ p
 
 nav
 {
-    margin-left: 60rem;
+    margin-left: 540px;
 }
 
 nav ul
@@ -101,6 +106,7 @@ nav a
 .menu__register a:hover
 {
     font-family: 'Raleway-bold';
+    border: none;
 }
 
 nav a:hover
@@ -246,6 +252,12 @@ nav a:focus
 
 /* Corps de la page */
 
+main
+{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
 /* Section Article "Hébergements" et Aside "Les plus populaires" */
 
 #main__heading
@@ -277,7 +289,6 @@ nav a:focus
     background-color: #F2F2F2;
     padding: 2rem 1rem 0rem 1rem ;
     border-radius: 2rem;
-    width: 80rem;
     margin-right: 3.5rem;
 }
 
@@ -291,7 +302,7 @@ nav a:focus
 .hebergements__vignette_style img
 {
     height: 9rem;
-    width: 20rem;
+    width: 200px;
     object-fit: cover;
     border-radius: 1.2rem 1.2rem 0rem 0rem ;
 }
@@ -319,7 +330,7 @@ nav a:focus
     font-weight: bold;
     font-size: 1.3rem;
     border: none;
-    margin: 2.5rem 0rem 3rem 4rem;
+    margin: 0rem 0rem 4rem 2rem;
     outline:none;
 }
 
@@ -348,7 +359,7 @@ nav a:focus
     background-color: #F2F2F2;
     padding: 2rem 3rem 0rem 3rem ;
     border-radius: 2rem;
-    width: 45rem;
+    width: 30%rem;
 }
 
 #populaires h2
@@ -403,16 +414,9 @@ nav a:focus
     display: flex;
 }
 
-.activites__vignette_bloc
-{
-    display: flex;
-    margin-right: 2rem;
-}
-
 .vignette__picture_shape img
 {
     object-fit: cover;
-    
     border-radius: 2rem 2rem 0 0;
 }
 
@@ -455,7 +459,7 @@ nav a:focus
     margin: 0rem 2rem 2rem 0rem;
     display:flex;
     flex-direction: column;
-    width: 30.3rem;
+    width: 285px;
 }
 
 .activites__description_style
@@ -476,8 +480,8 @@ footer
 {
     display: flex;
     background-color: #f2f2f2;
-    margin: 5rem 0rem 5rem;
-    padding-bottom: 10rem;
+    padding: 0rem 0rem 10rem 2rem;
+
 }
 
 .footer__style
