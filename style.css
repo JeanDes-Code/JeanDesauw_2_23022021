@@ -65,6 +65,7 @@ header
 {
     margin-top: 3rem;
     display: flex;
+    justify-content: space-between;
 }
 
 .menu__register_mobile
@@ -72,10 +73,6 @@ header
     display:none;
 }
 
-nav
-{
-    margin-left: 540px;
-}
 
 nav ul
 {
@@ -264,6 +261,7 @@ main
 {
     display : flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 .article__title
 {
@@ -289,7 +287,6 @@ main
     background-color: #F2F2F2;
     padding: 2rem 1rem 0rem 1rem ;
     border-radius: 2rem;
-    margin-right: 3.5rem;
 }
 
 .hebergements__vignette_row
@@ -412,6 +409,8 @@ main
 #activites__vignette
 {
     display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 8rem;
 }
 
 .vignette__picture_shape img
@@ -445,10 +444,6 @@ main
     height: 11rem;
 }
 
-.vignette__size_l
-{
-    margin-right: 2rem;
-}
 
 .activites__vignette_style
 {
@@ -459,7 +454,7 @@ main
     margin: 0rem 2rem 2rem 0rem;
     display:flex;
     flex-direction: column;
-    width: 285px;
+    width: 290px;
 }
 
 .activites__description_style
@@ -481,12 +476,13 @@ footer
     display: flex;
     background-color: #f2f2f2;
     padding: 0rem 0rem 10rem 2rem;
+    justify-content: flex-start;
 
 }
 
 .footer__style
 {
-    margin-right: 25rem;
+    margin-right: 20rem;
 }
 
 .footer__style a
