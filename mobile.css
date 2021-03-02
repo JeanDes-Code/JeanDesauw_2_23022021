@@ -141,6 +141,11 @@ header p
 
 }
 
+form
+{
+    width: 100vw;
+}
+
 /* Filters */
 
 #header__filters
@@ -159,6 +164,13 @@ flex-wrap: nowrap;
 {
     margin: 0;
 }
+
+.filters__button
+{
+    font-size: 1.5rem;
+}
+
+
 /* Corps de la page */
 
 main
