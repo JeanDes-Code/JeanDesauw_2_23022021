@@ -189,7 +189,7 @@ nav a:focus
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    width: auto;
+    width: 100%;
 }
 
 #filters__container
@@ -481,7 +481,6 @@ footer
     display: flex;
     background-color: #f2f2f2;
     padding: 0rem 0rem 10rem 2rem;
-
 }
 
 .footer__style
