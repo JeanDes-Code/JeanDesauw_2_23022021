@@ -23,7 +23,7 @@ body
 
 h1
 {
-    font-size: 2.8rem;
+    font-size: 2.5rem;
 }
 
 h2
@@ -49,6 +49,7 @@ header
     display: flex;
     justify-content: center;
     flex-direction: column;
+    margin:0;
 }
 
 
@@ -83,6 +84,7 @@ header p
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-left: 2rem;
 }
 
 .search_bar
@@ -148,7 +150,7 @@ header p
 
 .description__title
 {
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
  .article__title
@@ -161,20 +163,29 @@ header p
 #hebergements
 {
     padding: 1rem 0rem 0rem 0rem ;
-    margin: 10rem 0 0 0;
+    margin: 5rem 0 0 0;
     background-color: unset;
-    width: 100%;
+    max-width: unset;
+}
+
+#hebergements__vignette
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .hebergements__vignette_style img
 {
     border-radius: 2rem 2rem 0rem 0rem;
-    height: 35rem;
+    height: 12rem;
     width: 100%;
 }
 
 .hebergements__vignette_style
 {
+    max-width: 280px;
+    height: 250px;
     padding: 1rem 1rem 1rem 1rem;
     margin: 0rem 0rem 1rem 0rem;
 }
@@ -183,10 +194,19 @@ header p
 {
     flex-direction: column;
     margin-bottom: 1rem;
+    justify-content: space-evenly;
+}
+
+.hebergements__description_style 
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
 .more_button
 {
+    display: none;
     font-size: 3rem;
     background-color: white;
 }
@@ -210,18 +230,25 @@ header p
 
 .populaires__vignette_style
 {
-    flex-direction: column;
+    align-items: stretch;
     padding: 1rem 1rem 1rem 1rem;
     margin: 0rem 0rem 1rem 0rem;
+    height: 100%;
 }
 
 .populaires__vignette_style img
 {
-    border-radius: 2rem;
-    height: 35rem;
-    width: 100%;
+    border-radius: 2rem 0rem 0rem 2rem;
     object-fit: cover;
+    width: 200px;
 }
+
+.populaires__description_style
+{
+    margin-left: 2rem;
+}
+
+
 /* Article  "Activités" */
 
 #activites
@@ -234,12 +261,24 @@ header p
     flex-direction: column;
 }
 
+.activites__vignette_column
+{
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.vignette_small
+{
+    width: 48%;
+}
+
 .activites__vignette_style
 {
     width: 98%;
     border-radius: 2rem;
     padding: 1rem 1rem 1rem 1rem;
-    margin: 0rem 0rem 1rem 0rem;
+    margin: 0rem 0rem 2rem 0rem;
 }
 .vignette__size_l
 {
@@ -261,6 +300,7 @@ footer
     display: flex;
     justify-content: space-evenly;
     width: 100%;
+    margin:0;
 }
 
 .footer__style li

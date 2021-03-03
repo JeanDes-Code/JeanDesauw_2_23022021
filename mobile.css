@@ -8,9 +8,23 @@
 html /*10px = 1rem */
 {
     margin:0;
-    width:90vw;
+    width:100vw;
 }
 
+body
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+}
+
+#bloc__style
+{
+    width: unset;
+    margin: unset;
+}
 
 h1
 {
@@ -29,14 +43,15 @@ h3
 
 p
 {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
 }
 
 /* Header*/
 
 header
 {
-    margin: unset;
+    width: 100%;
+    margin: auto;
 }
 
 .menu__register
@@ -66,26 +81,35 @@ header
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 90%;
+    margin: auto;
 }
 
 
 
 .header__logo 
 {
-    width: 8rem;
-    height: 8rem;
+    width: 10rem;
+    height: 10rem;
 }
 
 nav
 {
-    margin-top: 5rem;
+    width: 100%;
+    margin-top: 1rem;
     margin-left: unset;
+}
+
+nav a:hover
+{
+    padding: unset;
 }
 
 nav ul
 {
     display: flex;
     justify-content: center;
+    padding: unset;
 }
 
 nav li
@@ -94,41 +118,40 @@ nav li
     padding: unset;
 }
 
+
+nav a
+{
+    padding: unset;
+}
+
 nav a:hover
 {
     border-top:hidden;
 }
 
-header p
+#header__title p
 {
     font-size: 1.7rem;
 }
 
 
-.menu__activites
+.menu__item
 {
-    border-bottom: 2px solid #f2f2f2;
-    padding: 0 6rem 4rem 4rem;
+    border-bottom: solid 3px #d8d8d8;
+    padding-bottom: 1rem;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.menu__hebergements
+.menu__item:hover
 {
-    border-bottom: 2px solid #f2f2f2;
-    padding: 0 0rem 3.5rem 2.5rem;
+    padding-bottom: 1rem;
+    border-bottom: solid 3px #0065fc;
+    color: #0065fc;
+    align-items: center;
 }
-
-.menu__activites:hover
-{
-    border-bottom: 2px solid #0065FC;
-    padding: 0 6rem 4rem 4rem;
-
-}
-.menu__hebergements:hover
-{
-    border-bottom: 2px solid #0065FC;
-    padding: 0 0rem 3.5rem 2.5rem
-}
-
 
 /*_____________Header bottom_____________*/
 
@@ -138,7 +161,8 @@ header p
 {
     display: flex;
     flex-direction: column;
-
+    margin-top: 0rem;
+    margin-left: 4rem;
 }
 
 form
@@ -146,6 +170,26 @@ form
     width: 100vw;
 }
 
+.search_bar
+{
+    font-size:1.5rem;
+    height: 4.1rem;
+    padding: 0.5rem 0.5rem 0rem 0.5rem;
+}
+
+#search_bar__button
+{
+    display: none;
+}
+
+#search_bar__button_mobile
+{
+    display: unset;
+    color:white;
+    background-color:#0065FC;
+    border-radius: 1rem;
+    padding: 1rem 1rem 1rem 1rem;
+}
 /* Filters */
 
 #header__filters
@@ -153,11 +197,6 @@ form
 flex-direction: column;
 align-items: flex-start;
 flex-wrap: nowrap;
-}
-
-#header__filters h2
-{
-    margin-left: 2.5rem;
 }
 
 #filters__container
@@ -168,8 +207,16 @@ flex-wrap: nowrap;
 .filters__button
 {
     font-size: 1.5rem;
+    margin-top: 1rem;
+    margin-left: unset;
 }
 
+/* Info header*/
+
+#info
+{
+    margin: 2rem 0 2rem 0;
+}
 
 /* Corps de la page */
 
@@ -182,13 +229,14 @@ main
 #main__heading
 {
     flex-direction: column-reverse;
+    justify-content: unset;
 }
 
 .article__title
 {
-    margin-bottom: 2rem;
+    margin-bottom: 2.5rem;
+    margin: 1.5rem 0rem 1.5rem 2.5rem;
 }
-
 
 /*Article "Hébergements" */
 
@@ -197,12 +245,20 @@ main
     padding: 1rem 0rem 0rem 0rem ;
     margin: 0rem;
     background-color: unset;
+    max-width: unset;
 }
 
 .hebergements__vignette_row
 {
     flex-direction: column;
-    margin-bottom: 1rem;
+    margin-bottom: 0;
+    justify-content: unset;
+}
+
+.hebergements__vignette_style
+{
+    margin: 0rem 2rem 1rem 2rem;
+    display: unset;
 }
 
 .hebergements__vignette_style img
@@ -211,8 +267,19 @@ main
     height: 12rem;
 }
 
+.hebergements__description_style
+{
+    font-size: 1.2rem
+}
+
+.description__title
+{
+    font-size: 1.8rem;
+}
+
 .more_button
 {
+    margin-top: 1.5rem;
     background-color: white;
 }
 
@@ -232,10 +299,26 @@ main
 
 .populaires__vignette_style
 {
-    margin: 1rem 1rem 1rem 1rem;
+    margin: 0rem 1rem 1rem 1rem;
+}
+
+.populaires__vignette_style img
+{
+    height: 12rem;
+    width: 11rem;
 }
 
 /* Article  "Activités" */
+
+#activites
+{
+    margin: 0rem 0rem 2rem 0rem;
+}
+
+.activites__title
+{
+    margin: 0 0 2.5rem 2rem;
+}
 
 #activites__vignette
 {
@@ -244,7 +327,7 @@ main
 
 .vignette__picture_shape img
 {
-    object-fit: none;
+    object-fit: cover;
     height: 11rem;
 } 
 
@@ -260,7 +343,7 @@ main
     color:black;
     box-shadow: 0rem 0rem 2rem #3333332e;
     border-radius: 2rem;
-    margin: 1rem 2rem 2rem 2rem;
+    margin: 0rem 2rem 2rem 2rem;
     justify-content: center;
     width: 90%;
 }
@@ -272,6 +355,7 @@ footer
 {
     padding: 0rem 0rem 2rem 0rem;
     flex-direction: column; 
+    width: 100%;
 }
 
 .footer__style
