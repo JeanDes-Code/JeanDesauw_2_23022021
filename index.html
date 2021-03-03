@@ -12,6 +12,7 @@
 </head>
 
 <body>
+    <div id="bloc__style">
     <header>
         <div id ="header__top">
             <div id="header__logo_register">
@@ -37,6 +38,7 @@
                         <i id="search_bar__logo" class="fas fa-map-marker-alt"></i>
                         <input id="search_bar__box" class="search_bar" type="search" value="Marseille, France"/>
                         <input id="search_bar__button" class="search_bar" type="submit" value="Rechercher">
+                        <a id="search_bar__button_mobile" href="#"> <i class="fas fa-search"></i> </a>
                     </p>
                 </form>
             </div>
@@ -50,7 +52,8 @@
                 </div>
             </div>
             <div id="info">
-                <p> <i class="fas fa-info info__logo"></i> Plus de 500 logements sont disponibles dans cette ville </p>
+                <i class="fas fa-info info__logo"></i> 
+                <div> <p> Plus de 500 logements sont disponibles dans cette ville </p></div> 
             </div>
         </div>  
     </header>
@@ -217,7 +220,7 @@
                     </a>
                 </div>
                 <div class="activites__vignette_column">
-                    <div class="vignette__size_m vignette__picture_shape">
+                    <div class="vignette__size_m vignette__picture_shape vignette_small">
                         <a class="activites__vignette_style" href="#"> 
                             <img src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues"/> <br>
                             <div class="activites__description_style">
@@ -225,7 +228,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="vignette__size_xxs vignette__picture_shape">
+                    <div class="vignette__size_xxs vignette__picture_shape vignette_small">
                         <a class="activites__vignette_style" href="#"> 
                             <img src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Îles du Frioul"/> <br>
                             <div class="activites__description_style">
@@ -242,8 +245,8 @@
                         </div>
                     </a>
                 </div>
-                <div class="activites__vignette_column">
-                    <div class="vignette__size_xs vignette__picture_shape">
+                <div class="activites__vignette_column ">
+                    <div class="vignette__size_xs vignette__picture_shape vignette_small">
                         <a class="activites__vignette_style" href="#"> 
                             <img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde"/> <br>
                             <div class="activites__description_style">
@@ -251,7 +254,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="vignette__size_s vignette__picture_shape">
+                    <div class="vignette__size_s vignette__picture_shape vignette_small">
                         <a class="activites__vignette_style" href="#"> 
                             <img src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc Longchamp"/> <br>
                             <div class="activites__description_style">
@@ -264,6 +267,7 @@
         </article>
     </div>    
     </main>
+    </div>
     <footer>
         <div id='footer__about' class="footer__style">
             <h3>A propos</h3>
