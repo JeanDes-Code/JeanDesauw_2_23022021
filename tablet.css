@@ -170,7 +170,7 @@ header p
     padding: 1rem 0rem 0rem 0rem ;
     margin: 5rem 0 0 0;
     background-color: unset;
-    max-width: unset;
+    width: 100%;
 }
 
 #hebergements__vignette
@@ -189,7 +189,7 @@ header p
 
 .hebergements__vignette_style
 {
-    max-width: 280px;
+    max-width: 290px;
     height: 250px;
     padding: 1rem 1rem 1rem 1rem;
     margin: 0rem 0rem 1rem 0rem;
@@ -299,6 +299,7 @@ header p
 .vignette__size_l
 {
     margin:unset;
+    max-width: unset;
 }
 
 .vignette__picture_shape img
@@ -312,7 +313,7 @@ header p
 
 footer
 {
-    padding: 10rem 0 10rem 0;
+    padding: 10rem 0 10rem 6rem;
     display: flex;
     justify-content: space-evenly;
     width: 100%;
