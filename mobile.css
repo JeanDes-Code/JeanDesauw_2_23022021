@@ -162,7 +162,7 @@ nav a:hover
     display: flex;
     flex-direction: column;
     margin-top: 0rem;
-    margin-left: 4rem;
+    margin-left: 1.5rem;
 }
 
 form
@@ -175,6 +175,11 @@ form
     font-size:1.5rem;
     height: 4.1rem;
     padding: 0.5rem 0.5rem 0rem 0.5rem;
+}
+
+#search_bar__box
+{
+    border-radius: 0;
 }
 
 #search_bar__button
@@ -215,7 +220,13 @@ flex-wrap: nowrap;
 
 #info
 {
-    margin: 2rem 0 2rem 0;
+    margin: 2rem 1rem 2rem 0;
+    align-items: baseline;
+}
+
+#info p
+{
+    font-size: 1.5rem;
 }
 
 /* Corps de la page */

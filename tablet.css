@@ -87,6 +87,11 @@ header p
     margin-left: 2rem;
 }
 
+#search_bar__logo
+{
+    padding: 0.6rem 1.2rem 0.9rem 1.5rem;
+}
+
 .search_bar
 {
     font-size: 2.2rem;
@@ -125,7 +130,7 @@ header p
 .info__logo
 {
     font-size: 2.5em;
-    padding: 0.5rem 1.2rem 0.5rem 1.2rem;
+    padding: 0.7rem 1.4rem 0.7rem 1.4rem;
 }
 
 /* Corps de la page */
@@ -150,7 +155,7 @@ header p
 
 .description__title
 {
-    font-size: 2rem;
+    font-size: 1.8rem;
 }
 
  .article__title
@@ -190,6 +195,11 @@ header p
     margin: 0rem 0rem 1rem 0rem;
 }
 
+.first_row
+{
+    margin-right: 1rem;
+}
+
 .hebergements__vignette_row
 {
     flex-direction: column;
@@ -202,6 +212,12 @@ header p
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+}
+
+.hebergements__description_style p
+{
+    font-size: 1.8rem;
+    margin: 2rem 0rem 2rem 0rem;
 }
 
 .more_button

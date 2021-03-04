@@ -228,7 +228,7 @@ nav a:focus
 .filters__button:focus
 {
     background-color: #0065FC;
-    border: none;
+    border: 0.2rem solid #F2F2F2;
     color: white;
 }
 
@@ -251,9 +251,9 @@ nav a:focus
 .info__logo
 {
     color: #0065FC;
-    padding: 0.5rem 1rem 0.5rem 1rem;
+    padding: 0.8rem 1.1rem 0.8rem 1.1rem;
     border: 0.2rem solid #F2F2F2;
-    border-radius: 3rem;
+    border-radius: 2rem 2rem 2rem 2rem; 
     margin-right: 1rem;
 }
 
@@ -361,6 +361,11 @@ main
     margin: 0.5rem 0rem 1rem 1rem;
 }
 
+.hebergements__description_style p
+{
+    margin: 0.5rem 0rem 0.5rem 0rem;
+}
+
 .more_button:focus
 {
     color: #0065FC;
@@ -393,8 +398,8 @@ main
 
 .populaires__vignette_style img
 {
-    height: 10rem;
-    width: 10rem;
+    width: 13rem;
+    height: 13rem;
     object-fit: cover;
     border-radius: 1.2rem 0rem 0rem 1.2rem ;
     margin-bottom: 0.5rem;
@@ -402,6 +407,7 @@ main
 
 .populaires__vignette_style
 {
+    object-fit: cover;
     text-decoration: none;
     color: black;
     background-color: white;
@@ -414,9 +420,15 @@ main
 
 .populaires__description_style
 {
-    margin: 0.5rem 0rem 1rem 1rem;
+    margin: 1rem 0rem 1rem 1rem;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+}
+
+.populaires__description_style p
+{
+    margin: 0.5rem 0rem 0rem 0rem;
 }
 
 /* Article  "Activités" */
@@ -432,6 +444,11 @@ main
 {
     display: flex;
     justify-content: space-between;
+}
+
+.activites__title
+{
+    margin-bottom: 3rem;
 }
 
 .vignette__picture_shape img
