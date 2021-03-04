@@ -530,7 +530,7 @@ main
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    flex-wrap: 1;
+    flex-shrink: 1;
     flex-grow: 1;
     min-width: 25%;
     width: auto;
