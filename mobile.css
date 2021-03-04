@@ -52,6 +52,7 @@ header
 {
     width: 100vw;
     margin: auto;
+    overflow-x: hidden;
 }
 
 .menu__register
