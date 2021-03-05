@@ -116,7 +116,6 @@ nav a
 .menu__register a:hover
 {
     font-family: 'Raleway-bold';
-    border: none;
 }
 
 nav a:hover
@@ -125,11 +124,6 @@ nav a:hover
     color: #0065FC;
     border-top: 2px solid #0065FC;
     padding: 3.8rem 2rem 0rem 1.88rem;
-}
-
-nav a:focus
-{
-    color: #F2F2F2;
 }
 
 /*_____________Header bottom_____________*/
