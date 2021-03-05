@@ -118,7 +118,7 @@ nav a:hover
     font-family: 'Raleway-semibold';
     color: #0065FC;
     border-top: 2px solid #0065FC;
-    padding: 3rem 2rem 0rem 2rem;
+    padding: 3rem 2rem 0rem 1.88rem;
 }
 
 nav a:focus
