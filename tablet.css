@@ -4,16 +4,22 @@ html
 {
     margin: unset;
     width:100%;
+    overflow-x: hidden;
 }
 
 body
 {
     margin:unset;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     width: 100%;
     margin: auto;
+    overflow-x: hidden;
+}
+
+#bloc__style
+{
+    margin:0;
+    padding-left: 3.2rem;
+    overflow-x: hidden;
 }
 
 h1
@@ -45,6 +51,7 @@ header
     justify-content: center;
     flex-direction: column;
     margin:0;
+    padding-left: 3.2rem;
     overflow-x: hidden;
 }
 
@@ -149,7 +156,7 @@ header p
     flex-direction: column-reverse;
     justify-content: space-around;
     align-items: center;
-    padding-left: 5rem;
+    padding: 0;
 }
 
 .description__title
@@ -277,7 +284,7 @@ header p
 #activites
 {
     margin: 0rem 0rem 10rem 0rem;
-    padding-left: 5rem;
+    padding:0;
 }
 
 #activites__vignette
@@ -327,6 +334,7 @@ footer
     justify-content: space-evenly;
     width: 100%;
     margin:0;
+    overflow-x: hidden;
 }
 
 .footer__style li
@@ -351,4 +359,5 @@ footer
 .footer__style
 {
     margin-right: 2rem;
+    width: 90%;
 }
