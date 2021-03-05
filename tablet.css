@@ -182,12 +182,14 @@ header p
     border-radius: 2rem 2rem 0rem 0rem;
     height: 12rem;
     width: 100%;
+    flex-grow: 1;
 }
 
 .hebergements__vignette_style
 {
-    max-width: 290px;
+    max-width: 33.8rem;
     width: auto;
+    flex-grow: 1;
     height: 250px;
     padding: 1rem 1rem 1rem 1rem;
     margin: 0rem 0rem 1rem 0rem;
@@ -203,6 +205,7 @@ header p
     flex-direction: column;
     margin-bottom: 1rem;
     justify-content: space-evenly;
+    width: auto;
 }
 
 .hebergements__description_style 
@@ -254,7 +257,9 @@ header p
 {
     border-radius: 2rem 0rem 0rem 2rem;
     object-fit: cover;
-    width: 200px;
+    max-width: 30%;
+    flex-grow: 1;
+    flex-shrink: 1;
     height: 15rem;
     margin-bottom: 0;
 }
