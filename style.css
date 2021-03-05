@@ -316,7 +316,7 @@ main
 
 .hebergements__vignette_style img
 {
-    height: 9rem;
+    height: 10rem;
     min-width: 15rem;
     width: auto;
     object-fit: cover;
@@ -334,7 +334,7 @@ main
     margin: 0rem 2rem 2rem 2rem;
     display: flex;
     flex-direction: column;
-    max-width: 25rem;
+    width: 30%;
     flex-grow: 1;
     flex-shrink: 1;
 }

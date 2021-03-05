@@ -136,7 +136,7 @@ header p
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 80%;
+    width: 90%;
     margin: auto;
  }
 
@@ -187,6 +187,7 @@ header p
 .hebergements__vignette_style
 {
     max-width: 290px;
+    width: auto;
     height: 250px;
     padding: 1rem 1rem 1rem 1rem;
     margin: 0rem 0rem 1rem 0rem;
@@ -254,6 +255,8 @@ header p
     border-radius: 2rem 0rem 0rem 2rem;
     object-fit: cover;
     width: 200px;
+    height: 15rem;
+    margin-bottom: 0;
 }
 
 .populaires__description_style
@@ -279,25 +282,26 @@ header p
 {
     flex-direction: row;
     justify-content: space-between;
-    width: 100%;
-}
-
-.vignette_small
-{
-    width: 48%;
+    width: 100% ;
 }
 
 .activites__vignette_style
 {
-    width: 98%;
     border-radius: 2rem;
     padding: 1rem 1rem 1rem 1rem;
     margin: 0rem 0rem 2rem 0rem;
+    flex-shrink: 1;
+    flex-grow: 1;
 }
 .vignette__size_l
 {
     margin:unset;
     max-width: unset;
+}
+
+.vignette__size_s , .vignette__size_xxs
+{
+    margin-left: 1rem;
 }
 
 .vignette__picture_shape img
