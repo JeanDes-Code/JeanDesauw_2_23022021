@@ -53,19 +53,10 @@ header
 
 .menu__register
 {
-    display: none;
+    position: absolute;
+    top:-7.3rem;
+    right: 2rem;
 }
-
-.menu__register_mobile
-{
-    margin: 0;
-    display: unset;
-    font-size: 2rem ;
-    font-family: 'Raleway-Bold';
-    text-decoration: none;
-    color:#0065FC;
-}
-
 
 #header__top
 {
@@ -95,6 +86,7 @@ nav
     width: 100%;
     margin-top: 1rem;
     margin-left: unset;
+    position: relative;
 }
 
 nav a:hover
@@ -174,9 +166,15 @@ form
     padding: 0.5rem 0.5rem 0rem 0.5rem;
 }
 
+
 #search_bar__box
 {
     border-radius: 0;
+}
+
+#search_bar__logo
+{
+    padding: 1.2rem 1.2rem 1rem 1.5rem;
 }
 
 #search_bar__button
@@ -190,7 +188,8 @@ form
     color:white;
     background-color:#0065FC;
     border-radius: 1rem;
-    padding: 1rem 1rem 1rem 1rem;
+    padding: 1.1rem 1rem 0.9rem 1rem;
+    margin-left: -2rem;
 }
 /* Filters */
 
@@ -204,7 +203,9 @@ flex-wrap: nowrap;
 #filters__container
 {
     margin: 0;
+    display: unset;
 }
+
 
 .filters__button
 {
@@ -316,10 +317,7 @@ main
 
 .populaires__vignette_style
 {
-    margin: 0rem 0rem 1rem 2rem;
-    flex-shrink: 1;
-    max-width: 32.5rem;
-    width: auto;
+    margin: 2rem;
 }
 
 .populaires__vignette_style img

@@ -17,6 +17,7 @@
     font-family: 'Raleway-semibold';
     src:url('polices/raleway/static/Raleway-SemiBold.ttf');
 }
+
 /* Styles principaux */
 
 html /*10px = 1rem */
@@ -101,6 +102,11 @@ nav a
     padding: 5rem 2rem 0rem 2rem;
 }
 
+.menu__item
+{
+    font-family: 'Raleway';
+}
+
 .menu__register a
 {
     font-family: 'Raleway-bold';
@@ -118,7 +124,7 @@ nav a:hover
     font-family: 'Raleway-semibold';
     color: #0065FC;
     border-top: 2px solid #0065FC;
-    padding: 3rem 2rem 0rem 1.88rem;
+    padding: 3.8rem 2rem 0rem 1.88rem;
 }
 
 nav a:focus
@@ -143,11 +149,13 @@ nav a:focus
 #header__search_bar
 {
     width: auto;
+    display: flex;
+    align-items: center;
 }
 
 #search_bar__logo
 {
-    padding: 1.2rem 1.2rem 1rem 1.5rem;
+    padding: 1.6rem 1.8rem 1.6rem 1.8rem;
     background-color: #F2F2F2;
     border-radius: 1rem 0rem 0rem 1rem;
 }
@@ -167,12 +175,14 @@ nav a:focus
 #search_bar__button
 {
     font-family: 'Raleway-Semibold';
-    padding-right: 1rem;
+    padding:1.12rem 1rem 0.8rem 1rem;
     background-color: #0065FC;
     border: none;
-    border-radius: 0rem 1rem 1rem 0rem;
+    border-radius: 0rem 2rem 2rem 0rem;
     color: white;
     cursor: pointer;
+    font-size: 1.6rem;
+    width: 13rem;
 }
 
 #search_bar__button_mobile
@@ -187,6 +197,7 @@ nav a:focus
     font-weight: bold;
     padding-left: 1.5rem;
     outline: none;
+    height: 5rem
 }
 
 /* Filters */
@@ -203,6 +214,8 @@ nav a:focus
 
 #filters__container
 {
+    display: flex;
+    align-items: center;
     margin-left: 2rem;
 }
 
@@ -210,7 +223,7 @@ nav a:focus
 {   
     font-family: 'Raleway-bold';
     font-weight: bold;
-    font-size: 2rem;
+    font-size: 1.8rem;
     border : 0.2rem solid #F2F2F2;
     border-radius: 3rem;
     padding: 0rem 2rem 0rem 0rem;
@@ -235,16 +248,18 @@ nav a:focus
 .filters__logo
 {
     color: #0065FC;
-    margin-right: 0.5rem;
-    padding: 0.9rem 0.8rem 0.9rem 0.8rem;
+    margin-right: 1rem;
+    padding: 1.5rem 1.4rem 1.5rem 1.4rem;
     background-color: #DEEBFF;
     border-radius: 3rem;
+    font-size: 2rem;
 }
 
 .filters__logo_var
 {
-    padding: 0.9rem 1rem 0.9rem 1rem;
+    padding: 1.5rem 1.6rem 1.5rem 1.6rem;
 }
+
 
 /* Info header*/
 
@@ -271,6 +286,10 @@ main
     margin:auto;
 }
 
+main a:hover
+{
+    transform: scale(1.05);
+}
 /* Section Article "Hébergements" et Aside "Les plus populaires" */
 
 #main__heading
@@ -293,6 +312,7 @@ main
 {
     color: #f2f2f2;
 }
+
 
 /*Article "Hébergements" */
 

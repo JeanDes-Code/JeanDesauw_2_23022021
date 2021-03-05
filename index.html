@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet"  href="tablet.css" media="all and (min-width: 426px) and (max-width: 1024px)"/>
-    <link rel="stylesheet" href="mobile.css" media="all and (max-width: 425px)"/>
+    <link rel="stylesheet"  href="tablet.css" media="all and (min-width: 751px) and (max-width: 1024px)"/>
+    <link rel="stylesheet" href="mobile.css" media="all and (max-width: 750px)"/>
     <script src="https://kit.fontawesome.com/8ed4d3c170.js" crossorigin="anonymous"></script>
     <title>Reservia - Trouver votre hébergement</title>
 </head>
@@ -17,7 +17,6 @@
         <div id ="header__top">
             <div id="header__logo_register">
                 <img class="header__logo" src="images/logo/Reservia.svg" alt="logo de l'entreprise"/>
-                <a class="menu__register_mobile" href="#"> S'inscrire </a>
             </div>
             <nav>
                 <ul>
@@ -36,7 +35,7 @@
                 <form method="post" action="#">
                     <p>
                         <i id="search_bar__logo" class="fas fa-map-marker-alt"></i>
-                        <input id="search_bar__box" class="search_bar" type="search" value="Marseille, France"/>
+                        <input id="search_bar__box" class="search_bar" type="search" placeholder="Marseille, France"/>
                         <input id="search_bar__button" class="search_bar" type="submit" value="Rechercher">
                         <a id="search_bar__button_mobile" href="#"> <i class="fas fa-search"></i> </a>
                     </p>
@@ -164,7 +163,9 @@
             </div>
             <div id="populaires__vignette">
                 <a class="populaires__vignette_style" href="#"> 
-                    <img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hôtel Le soleil du matin"/> 
+                    <div class="populaires__img">
+                        <img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hôtel Le soleil du matin"/> 
+                    </div>
                     <div class="populaires__description_style">
                         <div class="populaires__description">
                             <span class="description__title"> Hôtel Le soleil du matin </span> 
@@ -180,7 +181,9 @@
                     </div> 
                 </a>
                 <a class="populaires__vignette_style" href="#"> 
-                    <img src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Au coeur de l'eau"/>
+                    <div class="populaires__img">
+                        <img src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Au coeur de l'eau"/>
+                    </div>
                     <div class="populaires__description_style">
                         <div class="populaires__description"> 
                             <span class="description__title"> Au coeur de l'eau Chambres d'hôtes </span> 
@@ -196,7 +199,9 @@
                     </div> 
                 </a>
                 <a class="populaires__vignette_style" href="#"> 
+                    <div class="populaires__img">
                     <img src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Hôtel Tout bleu et blanc"/>
+                    </div>
                     <div class="populaires__description_style">
                         <div class="populaires__description"> 
                             <span class="description__title"> Hôtel Tout bleu et Blanc </span> 
