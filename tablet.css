@@ -1,24 +1,25 @@
 /* Styles principaux */
 
-@-ms-viewport
-{
-    width: device-width;
-}
-
 html
 {
     margin: unset;
     width:100%;
+    overflow-x: hidden;
 }
 
 body
 {
     margin:unset;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     width: 100%;
     margin: auto;
+    overflow-x: hidden;
+}
+
+#bloc__style
+{
+    margin:0;
+    padding-left: 3.2rem;
+    overflow-x: hidden;
 }
 
 h1
@@ -50,6 +51,8 @@ header
     justify-content: center;
     flex-direction: column;
     margin:0;
+    padding-left: 3.2rem;
+    overflow-x: hidden;
 }
 
 
@@ -87,6 +90,11 @@ header p
     margin-left: 2rem;
 }
 
+#search_bar__logo
+{
+    padding: 1.1rem 1.2rem 1.4rem 1.5rem;
+}
+
 .search_bar
 {
     font-size: 2.2rem;
@@ -100,12 +108,17 @@ header p
 
 #header__filters
 {
-    width: 100vw;
+    max-width: 100vw;
 }
 
 #header__filters h2
 {
     font-size: 2.3rem;
+}
+
+#filters__container
+{
+    display:unset;
 }
 
 .filters__button
@@ -125,7 +138,7 @@ header p
 .info__logo
 {
     font-size: 2.5em;
-    padding: 0.5rem 1.2rem 0.5rem 1.2rem;
+    padding: 0.7rem 1.4rem 0.7rem 1.4rem;
 }
 
 /* Corps de la page */
@@ -135,7 +148,7 @@ header p
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 80%;
+    width: 90%;
     margin: auto;
  }
 
@@ -146,11 +159,12 @@ header p
     flex-direction: column-reverse;
     justify-content: space-around;
     align-items: center;
+    padding: 0;
 }
 
 .description__title
 {
-    font-size: 2rem;
+    font-size: 1.8rem;
 }
 
  .article__title
@@ -165,7 +179,7 @@ header p
     padding: 1rem 0rem 0rem 0rem ;
     margin: 5rem 0 0 0;
     background-color: unset;
-    max-width: unset;
+    width: 100%;
 }
 
 #hebergements__vignette
@@ -180,14 +194,22 @@ header p
     border-radius: 2rem 2rem 0rem 0rem;
     height: 12rem;
     width: 100%;
+    flex-grow: 1;
 }
 
 .hebergements__vignette_style
 {
-    max-width: 280px;
+    max-width: 33.8rem;
+    width: auto;
+    flex-grow: 1;
     height: 250px;
     padding: 1rem 1rem 1rem 1rem;
     margin: 0rem 0rem 1rem 0rem;
+}
+
+.first_row
+{
+    margin-right: 1rem;
 }
 
 .hebergements__vignette_row
@@ -195,6 +217,7 @@ header p
     flex-direction: column;
     margin-bottom: 1rem;
     justify-content: space-evenly;
+    width: auto;
 }
 
 .hebergements__description_style 
@@ -202,6 +225,12 @@ header p
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+}
+
+.hebergements__description_style p
+{
+    font-size: 1.8rem;
+    margin: 2rem 0rem 2rem 0rem;
 }
 
 .more_button
@@ -240,7 +269,11 @@ header p
 {
     border-radius: 2rem 0rem 0rem 2rem;
     object-fit: cover;
-    width: 200px;
+    max-width: 100%;
+    flex-grow: 1;
+    flex-shrink: 1;
+    height: 15rem;
+    margin-bottom: 0;
 }
 
 .populaires__description_style
@@ -254,6 +287,7 @@ header p
 #activites
 {
     margin: 0rem 0rem 10rem 0rem;
+    padding:0;
 }
 
 #activites__vignette
@@ -268,21 +302,23 @@ header p
     width: 100%;
 }
 
-.vignette_small
-{
-    width: 48%;
-}
-
 .activites__vignette_style
 {
-    width: 98%;
     border-radius: 2rem;
     padding: 1rem 1rem 1rem 1rem;
     margin: 0rem 0rem 2rem 0rem;
+    flex-shrink: 1;
+    flex-grow: 1;
 }
 .vignette__size_l
 {
     margin:unset;
+    max-width: unset;
+}
+
+.vignette__size_s , .vignette__size_xxs
+{
+    margin-left: 1rem;
 }
 
 .vignette__picture_shape img
@@ -296,11 +332,12 @@ header p
 
 footer
 {
-    padding: 10rem 0 10rem 0;
+    padding: 10rem 0 10rem 6rem;
     display: flex;
     justify-content: space-evenly;
     width: 100%;
     margin:0;
+    overflow-x: hidden;
 }
 
 .footer__style li
@@ -325,4 +362,5 @@ footer
 .footer__style
 {
     margin-right: 2rem;
+    width: 90%;
 }
