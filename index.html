@@ -5,18 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet"  href="tablet.css" media="all and (min-width: 426px) and (max-width: 1024px)"/>
-    <link rel="stylesheet" href="mobile.css" media="all and (max-width: 425px)"/>
+    <link rel="stylesheet"  href="tablet.css" media="all and (min-width: 751px) and (max-width: 1072px)"/>
+    <link rel="stylesheet" href="mobile.css" media="all and (max-width: 750px)"/>
     <script src="https://kit.fontawesome.com/8ed4d3c170.js" crossorigin="anonymous"></script>
     <title>Reservia - Trouver votre hébergement</title>
 </head>
 
 <body>
+    <div id="bloc__style">
     <header>
         <div id ="header__top">
             <div id="header__logo_register">
                 <img class="header__logo" src="images/logo/Reservia.svg" alt="logo de l'entreprise"/>
-                <a class="menu__register_mobile" href="#"> S'inscrire </a>
             </div>
             <nav>
                 <ul>
@@ -35,22 +35,24 @@
                 <form method="post" action="#">
                     <p>
                         <i id="search_bar__logo" class="fas fa-map-marker-alt"></i>
-                        <input id="search_bar__box" class="search_bar" type="search" value="Marseille, France"/>
+                        <input id="search_bar__box" class="search_bar" type="search" placeholder="Marseille, France"/>
                         <input id="search_bar__button" class="search_bar" type="submit" value="Rechercher">
+                        <a id="search_bar__button_mobile" href="#"> <i class="fas fa-search"></i> </a>
                     </p>
                 </form>
             </div>
             <div id="header__filters">
                 <h2>Filtres</h2>
                 <div id="filters__container">
-                    <button class="filters__button" onclick="filterSelection('#')"> <i class="fas fa-money-bill-wave filters__logo"></i> Économique </button>
-                    <button class="filters__button" onclick="filterSelection('#')"> <i class="fas fa-child filters__logo filters__logo_var"></i> Familial </button>
-                    <button class="filters__button" onclick="filterSelection('#')"> <i class="fas fa-heart filters__logo"></i> Romantique </button>
-                    <button class="filters__button" onclick="filterSelection('#')"> <i class="fas fa-dog filters__logo"></i> Animaux autorisés </button>
+                    <button class="filters__button" onclick="this.focus()"> <i class="fas fa-money-bill-wave filters__logo"></i> Économique </button>
+                    <button class="filters__button" onclick="this.focus()"> <i class="fas fa-child filters__logo filters__logo_var"></i> Familial </button>
+                    <button class="filters__button" onclick="this.focus()"> <i class="fas fa-heart filters__logo"></i> Romantique </button>
+                    <button class="filters__button" onclick="this.focus()"> <i class="fas fa-dog filters__logo"></i> Animaux autorisés </button>
                 </div>
             </div>
             <div id="info">
-                <p> <i class="fas fa-info info__logo"></i> Plus de 500 logements sont disponibles dans cette ville </p>
+                <i class="fas fa-info info__logo"></i> 
+                <div> <p> Plus de 500 logements sont disponibles dans cette ville </p></div> 
             </div>
         </div>  
     </header>
@@ -62,7 +64,7 @@
         <article id="hebergements">
             <h2 class="article__title"> Hébergements à Marseille </h2>
             <div id="hebergements__vignette">
-                <div class="hebergements__vignette_row">
+                <div class="hebergements__vignette_row first_row">
                     <a class="hebergements__vignette_style" href="#"> 
                         <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge de la Cannebière"/> <br>
                         <div class="hebergements__description_style">
@@ -157,50 +159,64 @@
         <aside id="populaires">
             <div id="populaires__title">
                 <h2 class="article__title"> Les plus populaires </h2> 
-                <i class="fas fa-chart-line fa-2x"></i> 
+                <i class="fas fa-chart-line fa-2x populaires__logo"></i> 
             </div>
-            <a class="populaires__vignette_style" href="#"> 
-                <img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hôtel Le soleil du matin"/> 
-                <div class="populaires__description_style">
-                    <span class="description__title"> Hôtel Le soleil du matin </span> 
-                    <p> Nuit à partir de <strong> 128€ </strong> </p>
-                    <div class="description__notation">
-                        <i class="fas fa-star true"></i>
-                        <i class="fas fa-star true"></i>
-                        <i class="fas fa-star true"></i>
-                        <i class="fas fa-star true"></i>
-                        <i class="fas fa-star true"></i>
+            <div id="populaires__vignette">
+                <a class="populaires__vignette_style" href="#"> 
+                    <div class="populaires__img">
+                        <img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hôtel Le soleil du matin"/> 
                     </div>
-                </div> 
-            </a>
-            <a class="populaires__vignette_style" href="#"> 
-                <img src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Au coeur de l'eau"/>
-                <div class="populaires__description_style"> 
-                    <span class="description__title"> Au coeur de l'eau Chambres d'hôtes </span> 
-                    <p> Nuit à partir de <strong> 71€ </strong> </p>
-                    <div class="description__notation">
-                        <i class="fas fa-star true"></i>
-                        <i class="fas fa-star true"></i>
-                        <i class="fas fa-star true"></i>
-                        <i class="fas fa-star true"></i>
-                        <i class="fas fa-star false"></i>
+                    <div class="populaires__description_style">
+                        <div class="populaires__description">
+                            <span class="description__title"> Hôtel Le soleil du matin </span> 
+                            <p> Nuit à partir de <strong> 128€ </strong> </p>
+                        </div>
+                        <div class="description__notation">
+                            <i class="fas fa-star true"></i>
+                            <i class="fas fa-star true"></i>
+                            <i class="fas fa-star true"></i>
+                            <i class="fas fa-star true"></i>
+                            <i class="fas fa-star true"></i>
+                        </div>
+                    </div> 
+                </a>
+                <a class="populaires__vignette_style" href="#"> 
+                    <div class="populaires__img">
+                        <img src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Au coeur de l'eau"/>
                     </div>
-                </div> 
-            </a>
-            <a class="populaires__vignette_style" href="#"> 
-                <img src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Hôtel Tout bleu et blanc"/>
-                <div class="populaires__description_style"> 
-                    <span class="description__title"> Hôtel Tout bleu et blanc </span> 
-                    <p> Nuit à partir de <strong> 68€ </strong> </p>
-                    <div class="description__notation">
-                        <i class="fas fa-star true"></i>
-                        <i class="fas fa-star true"></i>
-                        <i class="fas fa-star true"></i>
-                        <i class="fas fa-star true"></i>
-                        <i class="fas fa-star false"></i>
+                    <div class="populaires__description_style">
+                        <div class="populaires__description"> 
+                            <span class="description__title"> Au coeur de l'eau Chambres d'hôtes </span> 
+                            <p> Nuit à partir de <strong> 71€ </strong> </p>
+                        </div>
+                        <div class="description__notation">
+                            <i class="fas fa-star true"></i>
+                            <i class="fas fa-star true"></i>
+                            <i class="fas fa-star true"></i>
+                            <i class="fas fa-star true"></i>
+                            <i class="fas fa-star false"></i>
+                        </div>
+                    </div> 
+                </a>
+                <a class="populaires__vignette_style" href="#"> 
+                    <div class="populaires__img">
+                    <img src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Hôtel Tout bleu et blanc"/>
                     </div>
-                </div> 
-            </a>
+                    <div class="populaires__description_style">
+                        <div class="populaires__description"> 
+                            <span class="description__title"> Hôtel Tout bleu et Blanc </span> 
+                            <p> Nuit à partir de <strong> 68€ </strong> </p>
+                        </div>
+                        <div class="description__notation">
+                            <i class="fas fa-star true"></i>
+                            <i class="fas fa-star true"></i>
+                            <i class="fas fa-star true"></i>
+                            <i class="fas fa-star true"></i>
+                            <i class="fas fa-star false"></i>
+                        </div>
+                    </div> 
+                </a>
+            </div>    
         </aside>
 
     </div>
@@ -217,7 +233,7 @@
                     </a>
                 </div>
                 <div class="activites__vignette_column">
-                    <div class="vignette__size_m vignette__picture_shape">
+                    <div class="vignette__size_m vignette__picture_shape vignette_small">
                         <a class="activites__vignette_style" href="#"> 
                             <img src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues"/> <br>
                             <div class="activites__description_style">
@@ -225,7 +241,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="vignette__size_xxs vignette__picture_shape">
+                    <div class="vignette__size_xxs vignette__picture_shape vignette_small">
                         <a class="activites__vignette_style" href="#"> 
                             <img src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Îles du Frioul"/> <br>
                             <div class="activites__description_style">
@@ -242,8 +258,8 @@
                         </div>
                     </a>
                 </div>
-                <div class="activites__vignette_column">
-                    <div class="vignette__size_xs vignette__picture_shape">
+                <div class="activites__vignette_column ">
+                    <div class="vignette__size_xs vignette__picture_shape vignette_small">
                         <a class="activites__vignette_style" href="#"> 
                             <img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde"/> <br>
                             <div class="activites__description_style">
@@ -251,7 +267,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="vignette__size_s vignette__picture_shape">
+                    <div class="vignette__size_s vignette__picture_shape vignette_small">
                         <a class="activites__vignette_style" href="#"> 
                             <img src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc Longchamp"/> <br>
                             <div class="activites__description_style">
@@ -264,6 +280,7 @@
         </article>
     </div>    
     </main>
+    </div>
     <footer>
         <div id='footer__about' class="footer__style">
             <h3>A propos</h3>
